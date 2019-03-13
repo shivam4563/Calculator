@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<script type="text/javascript">
+		function addi(){
+			cal.display.value +="+";
+		}
+		function type1(){
+			cal.display.value +="1";
+		}
+		function type2(){
+			cal.display.value +="2";
+		}
+		function type3(){
+			cal.display.value +="3";
+		}
+		function type4(){
+			cal.display.value +="4";
+		}
+		function type5(){
+			cal.display.value +="5";
+		}
+		function type6(){
+			cal.display.value +="6";
+		}
+		function type7(){
+			cal.display.value +="7";
+		}
+		function type8(){
+			cal.display.value +="8";
+		}
+		function type9(){
+			cal.display.value +="9";
+		}
+		function type0(){
+			cal.display.value +="0";
+		}
+		
+		function sub(){
+			cal.display.value +="-";
+		}
+		function Mul(){
+			cal.display.value +="*";
+		}
+		function div(){
+			cal.display.value +="/";
+		}
+		function eq(){
+			cal.display.value =eval(cal.display.value);
+		}
+		function cl(){
+			cal.display.value ="";
+		}
+	</script>
+</head>
+<body>
+	<form name="cal">
+
+		<table border="3" cellspacing="2" cellpadding="2">
+			<tr>
+				<td colspan="4"><input type="text" name="display" disabled="disabled">
+			<tr>
+				<td><input type="button" onclick="cl()" name="C" value="C"></td>
+				<td><input type="button" onclick="type1()" name="1" value="1"></td>
+				<td><input type="button" onclick="type2()" name="2" value="2"></td>
+				<td><input type="button" onclick="div()" name="divide" value="/"></td>
+			</tr>
+			<tr>
+				<td><input type="button" onclick="type3()" name="3" value="3"></td>
+				<td><input type="button" onclick="type4()" name="4" value="4"></td>
+				<td><input type="button" onclick="type5()" name="5" value="5"></td>
+				<td><input type="button" onclick="addi()" name="add" value="+"></td>
+			</tr>
+			<tr>
+				<td><input type="button" onclick="type6()" name="6" value="6"></td>
+				<td><input type="button" onclick="type7()" name="7" value="7"></td>
+				<td><input type="button" onclick="type8()" name="8" value="8"></td>
+				<td><input type="button" onclick="sub()" name="substract" value="-"></td>
+			</tr>
+			<tr>
+				<td><input type="button" onclick="type9()" name="9" value="9"></td>
+				<td><input type="button" onclick="type0()" name="0" value="0"></td>
+				<td><input type="button" onclick="eq()" name="equal" value="="></td>
+				<td><input type="button" onclick="Mul()" name="Multiply" value="*"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
